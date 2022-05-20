@@ -1,0 +1,3 @@
+# First run the basic.py file
+# And then Run the Shell.py File using "python3 Shell.py"
+# And then Run the SCREAM_TEST.txt to execute the code.

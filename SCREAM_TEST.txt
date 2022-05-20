@@ -1,0 +1,43 @@
+# This is trhe most important part of the software
+
+VAR A = 5
+VAR B = 10
+PRINT (A+B) 
+PRINT (A*B) 
+PRINT (B/A)
+PRINT (B-A)
+
+PRINT("Hello, World!")
+
+PRINT("World! Hello,")
+
+FUN test(prefix) -> prefix + "CREAM LANGUAGE TEST PASSED"
+
+FUN join(elements, separator)
+	VAR result = ""
+	VAR len = LEN(elements)
+
+	FOR i = 0 TO len THEN
+		VAR result = result + elements/i
+		IF i != len - 1 THEN VAR result = result + separator
+	END
+
+	RETURN result
+END
+
+FUN map(elements, func)
+	VAR new_elements = []
+
+	FOR i = 0 TO LEN(elements) THEN
+		APPEND(new_elements, func(elements/i))
+	END
+
+	RETURN new_elements
+END
+
+PRINT("This is the SCREAM language which only screams!")
+
+FOR i = 0 TO 5 THEN
+	PRINT(join(map(["S"], test), ", "))
+END
+
